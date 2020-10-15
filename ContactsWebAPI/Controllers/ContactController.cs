@@ -24,7 +24,7 @@ namespace ContactsWebAPI.Controllers
         
         [HttpPost]
         [Route("CreateorUpdateContact")]
-        public async Task<IActionResult> Post([FromBody] ContactModel contact)
+        public async Task<IActionResult> Post([FromBody] Contact contact)
         {
             if (contact == null)
                 return BadRequest(contact);
