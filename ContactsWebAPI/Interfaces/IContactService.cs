@@ -8,6 +8,6 @@ namespace ContactsWebAPI.Interfaces
 {
     public interface IContactService
     {
-        Task<List<ContactModel>> CreateContact(ContactModel contact);
+        Task<List<Contact>> CreateContact(Contact contact);
     }
 }
