@@ -1,11 +1,10 @@
 ﻿{
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "iisSettings": {
-    "windowsAuthentication": false,
-    "anonymousAuthentication": true,
-    "launchUrl": "api/Contact",
+    "windowsAuthentication": false, 
+    "anonymousAuthentication": true, 
     "iisExpress": {
-      "applicationUrl": "http://localhost:51313/",
+      "applicationUrl": "http://localhost:5001",
       "sslPort": 0
     }
   },
@@ -13,18 +12,18 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
+      "launchUrl": "api/Contact",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "ASPNETCOREAPPLPATH": "localhost:51313"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "ContactsWebAPI": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:51313/",
+      "launchUrl": "api/Contact",
+      "applicationUrl": "http://localhost:5001",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "ASPNETCOREAPPLPATH": "localhost:51313"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
   }
