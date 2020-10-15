@@ -9,13 +9,13 @@ namespace ContactsWebAPI.Services
 {
     public class ContactService : IContactService
     {
-        private readonly List<ContactModel> contacts;
+        private readonly List<Contact> contacts;
         public ContactService()
         {
-            contacts = new List<ContactModel>();
+            contacts = new List<Contact>();
         }
 
-        public async Task<List<ContactModel>> CreateContact(ContactModel contact)
+        public async Task<List<Contact>> CreateContact(Contact contact)
         {
             var existedcontact = contacts.Find(x => x.FirstName == contact.FirstName && x.LastName == contact.LastName);
 
